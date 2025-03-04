@@ -6,6 +6,7 @@ function Home() {
       <h1>Welcome to Team Social</h1>
       <p>Connect with your team and collaborate effectively.</p>
       <button>Get Started</button>
+    <h2>hello saisob</h2>
     </div>
   )
 }
