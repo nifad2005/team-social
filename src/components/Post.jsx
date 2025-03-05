@@ -45,12 +45,6 @@ const Post = () => {
                     </div>
                 }
             </div>
-            <div>
-                <h1>new change</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, dicta.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, dicta.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, dicta.</p>
-            </div>
         </div>
     );
 };
