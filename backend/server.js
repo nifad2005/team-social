@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('express');
 const cors = require('cors')
 const mongoose = require('mongoose')
 const User = require('./models/User')
@@ -14,7 +14,7 @@ app.use(express.json())
 
 
 
-const uri = process.env.DB_URI
+const uri = process.env.DB_URI;
 console.log(uri)
 
 mongoose.connect(uri)
