@@ -18,6 +18,7 @@ const Post = () => {
                 </div>
             </div>
             <div className='mt-1'>
+                <p className='text-[16px] text-slate-500'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, similique ducimus. Veritatis ipsum saepe culpa tenetur, impedit porro blanditiis deserunt!</p>
                 <img className='w-96 h-52' src={post} alt="" />
             </div>
             <div className='flex justify-between items-center'>
