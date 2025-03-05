@@ -6,20 +6,26 @@ import { LuSendHorizontal } from "react-icons/lu";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Post = () => {
+const Post = ({post}) => {
     const [openComment, setOpenComment] = useState(false);
+    const {email, content, image} = post;
+    console.log(image);
     return (
-        <div className='border border-gray-300 inline-block p-1 shadow-2xl'>
+        <div className='border border-gray-300 p-1 shadow-2xl'>
             <div className='flex items-center gap-3'>
                 <img className='w-14 h-14 border border-blue-600 p-1 rounded-full' src={author} alt="" />
                 <div>
-                    <h2 className='text-xl font-semibold'>Murad</h2>
+                    <h2 className='text-xl font-semibold'>{email}</h2>
                     <p className='text-[12px] font-thin flex gap-1 items-center'><IoIosTimer className='text-sm text-black'></IoIosTimer>10 hours ago</p>
                 </div>
             </div>
             <div className='mt-1'>
-                <p className='text-[16px] text-slate-500'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, similique ducimus. Veritatis ipsum saepe culpa tenetur, impedit porro blanditiis deserunt!</p>
-                <img className='w-96 h-52' src={post} alt="" />
+                <p className='text-[16px] text-slate-500'>{content}</p>
+                {
+                    image !== "none" ?
+                    <img className='w-96 h-52' src={post} alt="" /> :
+                    null
+                }
             </div>
             <div className='flex justify-between items-center'>
                 <p className='flex items-center gap-1'><button className='cursor-pointer'><BiLike></BiLike></button><span>Like</span></p>
